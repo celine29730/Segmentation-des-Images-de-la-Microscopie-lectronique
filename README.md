@@ -133,7 +133,11 @@ On effectue par la suite les prédictions du modèle sur le jeu de test et on en
 ## visualisation des predictions
 
 Voici un exemple de comparaison entre une image du jeu de test et sa prédiction.
-![predictionimage1]
+![predictionimage1](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/prediction_image1.png)
+
+## Conclusion
+
+L'architecture u-net atteint de très bonnes performances sur des applications de segmentation biomédicale très différentes. Grâce à l'augmentation des données avec des déformations élastiques, il ne nécessite que très peu d'images annotées et dispose d'un temps d'apprentissage très raisonnable. L'architecture u-net peut être appliquée facilement à de nombreuses autres tâches
 
 
 
