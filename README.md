@@ -87,11 +87,13 @@ Pendant l'entraînement, toutes les augmentations sont choisies de manière stoc
 
 ```keras.preprocessing.image.ImageDataGenerator``` est un générateur de données, qui peut alimenter le DNN avec des données telles que: (données, étiquette), il peut également augmenter les données en même temps.
 
-Il est très pratique pour nous d'utiliser ````keras.preprocessing.image.ImageDataGenerator``` pour augmenter les données en implémentant la rotation d'image, le décalage, la redimensionnement, etc.
+Il est très pratique pour nous d'utiliser ```keras.preprocessing.image.ImageDataGenerator``` pour augmenter les données en implémentant la rotation d'image, le décalage, la redimensionnement, etc.
 
 Pour les tâches de segmentation d'image, l'image et le masque doivent être transformés ensemble.
 
 Une fois créé le générateur de données et la visualisation du résultat issu de la Data Augmentation, nous allons pouvoir définir notre modèle.
+
+Nous obtenons une classe de 30 images.
 
 On définit dans un premier temps la fonction de perte (loss).
 
@@ -101,6 +103,33 @@ Puisqu'il s'agit d'une tâche de segmentation segmentaire, une perte de pixels e
 
 
 Les images médicales contiennent souvent des classes d'objets très déséquilibrées; par conséquent, il est préférable de suggérer l'utilisation d'une perte pondérée. La fonction de pondération intègre également la distance aux deux cellules les plus proches et est définie par la formule suivante.
+
+![formule](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/formule1.png)
+
+## Définition du modèle
+
+Le modèle a été formé sur 90% des données d'entraînement (27 images) et testé sur 10% des données (3 images) avec les hyperparamètres suivants:
+
+Époque: 50
+
+Optimiseur: Adam
+
+Fonction objective: perte d'entropie croisée pondérée par pixel
+"binary_crossentropy": Calcule la perte d'entropie croisée entre les étiquettes vraies et les étiquettes prévues.
+
+On va créer des fichiers npy contenant toutes les images et masques.
+Nous allons entraîner notre modèle sur le fichier npy.
+
+**imgs_train** correspond à notre feature(X) (images) tandis que **imgs_mask_train (mask)** correspond à notre target(Y).
+
+## Affichage des courbes de loss et d'Accuracy sur les données d'apprentissage et de test
+
+
+
+
+
+
+
 
 
 
