@@ -124,6 +124,22 @@ Nous allons entraîner notre modèle sur le fichier npy.
 
 ## Affichage des courbes de loss et d'Accuracy sur les données d'apprentissage et de test
 
+![courbes](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/Courbes.png)
+
+Nous obtenons près de 90% d'accuracy pour notre modèle que ce soit sur le train ou la validation. On observe une stagnation au niveau de l'accuracy et du loss pour notre modèle d'entraînement à partir de 30 époques, et le modèle atteint des performances de test maximales à la 50e époque. Différentes tailles de lots et taux d'apprentissage ont été expérimentés pour entraîner le modèle jusqu'à 100 époques. La perte d'entraînement diminue mais n'améliore pas les performances de segmentation. Le modèle est probablement en surentraînement.
+
+On effectue par la suite les prédictions du modèle sur le jeu de test et on enregistre des résultats prévus.
+
+## visualisation des predictions
+
+Voici un exemple de comparaison entre une image du jeu de test et sa prédiction.
+
+
+
+
+
+
+
 
 
 
