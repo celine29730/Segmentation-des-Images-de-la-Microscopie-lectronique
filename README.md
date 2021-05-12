@@ -40,6 +40,8 @@ Nous allons dans un premier temps transformer nos images .tiff en format .png po
 Nous souhaitons établir ici une comparaison entre nos images et nos masks afin de pouvoir par la suite établir un modèle de prédiction sur nos images de test. 
 Nous allons donc dans un premier temps visualiser nos images ainsi les masks associés sur le jeu d'entraînement.
 
+![imagetrain0](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/Imagetrain0.png)
+
 
 
 
