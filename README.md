@@ -42,6 +42,25 @@ Nous allons donc dans un premier temps visualiser nos images ainsi les masks ass
 
 ![imagetrain0](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/Imagetrain0.png)
 
+![masktrain0](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/masktrain0.png)
+
+Nous avons ici l'image 0 avec son mask associé.
+
+## Segmentation gràce au réseau neuronal U Net
+
+Pour réaliser la segmentation de nos images microscopiques, nous utiliserons U-Net qui est un réseau neuronal entièrement convolutif avec une structure codeur-décodeur conçu pour la segmentation d'images sementiques sur des images biomédicales. C'est une architecture de méta-réseau très efficace qui a été adaptée pour incorporer d'autres conceptions d'architecture de réseau neuronal convolutif.
+
+L'architecture U-net est synonyme d'architecture encodeur-décodeur. Il s'agit essentiellement d'un cadre d'apprentissage en profondeur basé sur les FCN; il comprend deux parties:
+
+Un chemin contractuel similaire à un encodeur, pour capturer le contexte via une carte de caractéristiques compacte.
+Un chemin d'extension symétrique similaire à un décodeur, qui permet une localisation précise. Cette étape est effectuée pour conserver les informations de limite (informations spatiales) malgré le sous-échantillonnage et le regroupement maximal effectués dans l'étage du codeur.
+
+
+
+
+
+
+
 
 
 
