@@ -1,3 +1,5 @@
+
+![presentation](https://github.com/celine29730/Segmentation-des-Images-de-la-Microscopie-lectronique/blob/main/presentation.jpg)
 # Segmentation-des-Images-de-la-Microscopie-lectronique
 
 L’IA permet de simplifier et d’accélérer le travail des équipes d’imagerie, aujourd’hui majoritairement sur les étapes précliniques, en facilitant la lecture des images. Le CHRU a donc besoin d'un outil IA pour segmenter un tel type d'images.
