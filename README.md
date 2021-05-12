@@ -133,6 +133,8 @@ On effectue par la suite les prédictions du modèle sur le jeu de test et on en
 ## visualisation des predictions
 
 Voici un exemple de comparaison entre une image du jeu de test et sa prédiction.
+![predictionimage1]
+
 
 
 
